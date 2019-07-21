@@ -1,0 +1,28 @@
+.footer {
+  margin-top: auto;
+}
+
+.default-layout {
+  display: flex;
+  min-width: 1240px;
+}
+
+.content {
+  width: 100%;
+  min-height: 100vh;
+  padding-left: 290px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f6f5fa;
+}
+
+.sidebar {
+  position: fixed;
+  height: 100vh;
+  z-index: 3;
+}
+
+.topbar {
+  z-index: 2;
+  position: fixed;
+}

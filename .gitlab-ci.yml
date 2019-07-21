@@ -1,0 +1,33 @@
+image: node:10.14.0
+
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - node_modules/
+    - "$HOME/.npm"
+
+before_script:
+  - npm install
+
+stages:
+  - lint
+  - build
+
+lint:
+  stage: lint
+  script:
+    - npm run lint
+  except:
+    - development
+    - master
+
+build:
+  stage: build
+  script:
+    - npm run build
+  artifacts:
+    paths:
+      - dist
+  only:
+    - development
+    - master

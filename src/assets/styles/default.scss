@@ -1,0 +1,81 @@
+html {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+// test colors
+.purple {
+  color: #40356c;
+}
+
+.grey {
+  color: #656565;
+}
+
+.white {
+  color: #fff;
+}
+
+// text styles
+.text {
+  font-size: 14px;
+  line-height: 1;
+}
+
+.title {
+  font-size: 18px;
+  line-height: 0.78;
+}
+
+// fonst weight
+.light {
+  font-weight: 300;
+}
+
+.middle {
+  font-weight: 500;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+//
+.div-img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+// анимации vue-transition
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
